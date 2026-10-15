@@ -1,0 +1,44 @@
+{
+  "resources": [
+    {
+      "resource_id": "bucket-001",
+      "resource_type": "S3_BUCKET",
+      "name": "customer-documents",
+      "public_access": true,
+      "encryption_enabled": false,
+      "intended_public": false
+    },
+    {
+      "resource_id": "bucket-002",
+      "resource_type": "S3_BUCKET",
+      "name": "company-backups",
+      "public_access": false,
+      "encryption_enabled": false,
+      "intended_public": false
+    },
+    {
+      "resource_id": "policy-001",
+      "resource_type": "IAM_POLICY",
+      "name": "AdminAccessPolicy",
+      "effect": "Allow",
+      "actions": ["*"],
+      "resources": ["*"]
+    },
+    {
+      "resource_id": "bucket-003",
+      "resource_type": "S3_BUCKET",
+      "name": "public-product-images",
+      "public_access": true,
+      "encryption_enabled": true,
+      "intended_public": true
+    },
+    {
+      "resource_id": "bucket-004",
+      "resource_type": "S3_BUCKET",
+      "name": "private-reports",
+      "public_access": false,
+      "encryption_enabled": true,
+      "intended_public": false
+    }
+  ]
+}
